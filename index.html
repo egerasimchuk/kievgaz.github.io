@@ -18,6 +18,26 @@
 			body, .font_second, .btn.red, .btn.transparent_twitter_color, .btn.transparent_facebook_color {
 				font-family: 'Montserrat', 'Open Sans Condensed', sans-serif !important;
 			}
+			#container {
+				position: absolute;
+				top: 0;
+
+			  width: 100%;
+			  height: 100%;
+				min-height: 200px;
+			  overflow: hidden;
+			  /* -webkit-filter: blur(5px);
+			  -moz-filter: blur(5px);
+			  -o-filter: blur(5px);
+			  -ms-filter: blur(5px);
+			  filter: blur(5px); */
+				z-index: -100;
+			}
+
+			#videobcg {
+			  width: 100%;
+			  height: auto;
+			}
 		</style>
 	</head>
 	<body>
@@ -53,7 +73,13 @@
 
 <!-- Header 15 -->
 
-<header class="bg_white padding_top200 padding_bottom75 header_15">
+	<div id="container">
+	    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+	    <source src="main.mp4" type="video/mp4">
+	    Sorry, your browser does not support HTML5 video.
+	    </video>
+	</div>
+<header class=" padding_top200 padding_bottom75 header_15">
 
 	<!-- Navigation 8 -->
 
@@ -74,16 +100,22 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container nopadding text-center">
+
+	<div class="container nopadding text-center" style="top: -40px;">
 		<h1 class="margin_auto blue max_width770 font_second light font62">
 			<!-- <img src="i/logo_black.png" /> -->
-			<img src="logo.jpg" class="max_width370" />
+			<img src="logo.png" class="max_width370" />
 		</h1>
-		<div class="margin_auto top50 max_width570 dark_blue light font22">
+
+		<!-- <div class="margin_auto top50 max_width570 dark_blue light font22" style="background: white; opacity 0.7;">
 			Енергоефективний котел і систему опалення та бери участь у програмі компенсації 35% вартості обладнання та монтажу
+		</div> -->
+		<a href="#" class="btn size40 font12 red radius6 uppercase spacing20 padding_sides20 top65" data-toggle="modal" data-target="#contactForm"><b>Встановити котел</b></a>
+
+		<div class="top100">
+
 		</div>
-		<a href="#" class="btn size40 font12 red radius6 uppercase spacing20 padding_sides20 top65" data-toggle="modal" data-target="#contactForm"><b>Встановити</b></a>
-	</div>
+		</div>
 </header>
 
 
