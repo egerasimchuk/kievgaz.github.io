@@ -421,7 +421,7 @@
 							</div>
 							<div class="bottom30 relative input_holder">
 								<i class="fa fa-phone line_height50 dark_blue absolute left20"></i>
-								<input type="text" name=" phone" placeholder="Ваш номер телефону" class="input size50 border border_light_gray focus_blue radius6 width_full padding_left50 padding_right20" required/>
+								<input type="text" name=" phone" placeholder="Ваш номер телефону" class="js-phone-input input size50 border border_light_gray focus_blue radius6 width_full padding_left50 padding_right20" required/>
 							</div>
 							<button class="top40 btn size60 red min_width230">Надіслати</button>
 						</form>
@@ -435,6 +435,12 @@
 <script src="js/aos.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('.js-phone-input').mask('+38 (099) 999 99 99', {placeholder: "  "});
+    })
+</script>
 
 </body>
 </html>
