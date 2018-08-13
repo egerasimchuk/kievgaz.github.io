@@ -6,11 +6,11 @@ if (!empty($_POST))
 		/* SETTINGS */
 
 		// email "subject"
-		$title = 'New message from my Landing page';
+		$title = 'Новое сообшение от kievgaz';
 		// email field "From" - name of sender (e.g. your first & last name)
-		$from_name = "John Jonson";
+		$from_name = "Инфо";
 		// email field "From" - email of sender (e.g. "robot@domain.com")
-		$from_email = "robot@domain.com";
+		$from_email = "system@kievgaz.ua";
 		// Email to receive message - PUT YOUR EMAIL HERE
 		$to = "my@email.com";
 		
